@@ -16,16 +16,18 @@ struct ContentView: View {
                 NavigationLink {
                     LyricsView(song: song)
                 } label: {
-                    VStack {
+                    VStack(spacing: 8) {
                         HStack {
                             Text(song.title)
                                 .font(.title3)
+                                .fontWeight(.semibold)
                             Spacer()
                         }
                         SingersView(singers: song.singers)
                     }
                 }
             })
+            .navigationTitle("Duet Lyrics")
         })
         
     }
