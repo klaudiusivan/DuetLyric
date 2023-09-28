@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8685B1B2AC57E6B000E7D50 /* LyricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8685B1A2AC57E6B000E7D50 /* LyricsView.swift */; };
+		F8685B1D2AC58A58000E7D50 /* SingersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8685B1C2AC58A58000E7D50 /* SingersView.swift */; };
+		F8685B1F2AC58D72000E7D50 /* ListSongs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8685B1E2AC58D72000E7D50 /* ListSongs.swift */; };
+		F89492412AC5700900D93DFC /* DuetLyricsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89492402AC5700900D93DFC /* DuetLyricsApp.swift */; };
+		F89492432AC5700900D93DFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89492422AC5700900D93DFC /* ContentView.swift */; };
+		F89492452AC5700B00D93DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89492442AC5700B00D93DFC /* Assets.xcassets */; };
+		F89492482AC5700B00D93DFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F89492472AC5700B00D93DFC /* Preview Assets.xcassets */; };
+		F89492522AC5700C00D93DFC /* DuetLyricsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89492512AC5700C00D93DFC /* DuetLyricsTests.swift */; };
+		F894925C2AC5700C00D93DFC /* DuetLyricsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F894925B2AC5700C00D93DFC /* DuetLyricsUITests.swift */; };
+		F894925E2AC5700C00D93DFC /* DuetLyricsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F894925D2AC5700C00D93DFC /* DuetLyricsUITestsLaunchTests.swift */; };
+		F894926D2AC5703500D93DFC /* LyricsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F894926C2AC5703500D93DFC /* LyricsModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F894924E2AC5700C00D93DFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F89492352AC5700900D93DFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F894923C2AC5700900D93DFC;
+			remoteInfo = DuetLyrics;
+		};
+		F89492582AC5700C00D93DFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F89492352AC5700900D93DFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F894923C2AC5700900D93DFC;
+			remoteInfo = DuetLyrics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8685B1A2AC57E6B000E7D50 /* LyricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsView.swift; sourceTree = "<group>"; };
+		F8685B1C2AC58A58000E7D50 /* SingersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingersView.swift; sourceTree = "<group>"; };
+		F8685B1E2AC58D72000E7D50 /* ListSongs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSongs.swift; sourceTree = "<group>"; };
+		F894923D2AC5700900D93DFC /* DuetLyrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuetLyrics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F89492402AC5700900D93DFC /* DuetLyricsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuetLyricsApp.swift; sourceTree = "<group>"; };
+		F89492422AC5700900D93DFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F89492442AC5700B00D93DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F89492472AC5700B00D93DFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F894924D2AC5700C00D93DFC /* DuetLyricsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuetLyricsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F89492512AC5700C00D93DFC /* DuetLyricsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuetLyricsTests.swift; sourceTree = "<group>"; };
+		F89492572AC5700C00D93DFC /* DuetLyricsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuetLyricsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F894925B2AC5700C00D93DFC /* DuetLyricsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuetLyricsUITests.swift; sourceTree = "<group>"; };
+		F894925D2AC5700C00D93DFC /* DuetLyricsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuetLyricsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F894926C2AC5703500D93DFC /* LyricsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F894923A2AC5700900D93DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F894924A2AC5700C00D93DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89492542AC5700C00D93DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F89492342AC5700900D93DFC = {
+			isa = PBXGroup;
+			children = (
+				F894923F2AC5700900D93DFC /* DuetLyrics */,
+				F89492502AC5700C00D93DFC /* DuetLyricsTests */,
+				F894925A2AC5700C00D93DFC /* DuetLyricsUITests */,
+				F894923E2AC5700900D93DFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F894923E2AC5700900D93DFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F894923D2AC5700900D93DFC /* DuetLyrics.app */,
+				F894924D2AC5700C00D93DFC /* DuetLyricsTests.xctest */,
+				F89492572AC5700C00D93DFC /* DuetLyricsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F894923F2AC5700900D93DFC /* DuetLyrics */ = {
+			isa = PBXGroup;
+			children = (
+				F89492402AC5700900D93DFC /* DuetLyricsApp.swift */,
+				F89492422AC5700900D93DFC /* ContentView.swift */,
+				F8685B1C2AC58A58000E7D50 /* SingersView.swift */,
+				F8685B1A2AC57E6B000E7D50 /* LyricsView.swift */,
+				F894926C2AC5703500D93DFC /* LyricsModel.swift */,
+				F8685B1E2AC58D72000E7D50 /* ListSongs.swift */,
+				F89492442AC5700B00D93DFC /* Assets.xcassets */,
+				F89492462AC5700B00D93DFC /* Preview Content */,
+			);
+			path = DuetLyrics;
+			sourceTree = "<group>";
+		};
+		F89492462AC5700B00D93DFC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F89492472AC5700B00D93DFC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F89492502AC5700C00D93DFC /* DuetLyricsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F89492512AC5700C00D93DFC /* DuetLyricsTests.swift */,
+			);
+			path = DuetLyricsTests;
+			sourceTree = "<group>";
+		};
+		F894925A2AC5700C00D93DFC /* DuetLyricsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F894925B2AC5700C00D93DFC /* DuetLyricsUITests.swift */,
+				F894925D2AC5700C00D93DFC /* DuetLyricsUITestsLaunchTests.swift */,
+			);
+			path = DuetLyricsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F894923C2AC5700900D93DFC /* DuetLyrics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F89492612AC5700C00D93DFC /* Build configuration list for PBXNativeTarget "DuetLyrics" */;
+			buildPhases = (
+				F89492392AC5700900D93DFC /* Sources */,
+				F894923A2AC5700900D93DFC /* Frameworks */,
+				F894923B2AC5700900D93DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuetLyrics;
+			productName = DuetLyrics;
+			productReference = F894923D2AC5700900D93DFC /* DuetLyrics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F894924C2AC5700C00D93DFC /* DuetLyricsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F89492642AC5700C00D93DFC /* Build configuration list for PBXNativeTarget "DuetLyricsTests" */;
+			buildPhases = (
+				F89492492AC5700C00D93DFC /* Sources */,
+				F894924A2AC5700C00D93DFC /* Frameworks */,
+				F894924B2AC5700C00D93DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F894924F2AC5700C00D93DFC /* PBXTargetDependency */,
+			);
+			name = DuetLyricsTests;
+			productName = DuetLyricsTests;
+			productReference = F894924D2AC5700C00D93DFC /* DuetLyricsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F89492562AC5700C00D93DFC /* DuetLyricsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F89492672AC5700C00D93DFC /* Build configuration list for PBXNativeTarget "DuetLyricsUITests" */;
+			buildPhases = (
+				F89492532AC5700C00D93DFC /* Sources */,
+				F89492542AC5700C00D93DFC /* Frameworks */,
+				F89492552AC5700C00D93DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F89492592AC5700C00D93DFC /* PBXTargetDependency */,
+			);
+			name = DuetLyricsUITests;
+			productName = DuetLyricsUITests;
+			productReference = F89492572AC5700C00D93DFC /* DuetLyricsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F89492352AC5700900D93DFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F894923C2AC5700900D93DFC = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					F894924C2AC5700C00D93DFC = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F894923C2AC5700900D93DFC;
+					};
+					F89492562AC5700C00D93DFC = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F894923C2AC5700900D93DFC;
+					};
+				};
+			};
+			buildConfigurationList = F89492382AC5700900D93DFC /* Build configuration list for PBXProject "DuetLyrics" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F89492342AC5700900D93DFC;
+			productRefGroup = F894923E2AC5700900D93DFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F894923C2AC5700900D93DFC /* DuetLyrics */,
+				F894924C2AC5700C00D93DFC /* DuetLyricsTests */,
+				F89492562AC5700C00D93DFC /* DuetLyricsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F894923B2AC5700900D93DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89492482AC5700B00D93DFC /* Preview Assets.xcassets in Resources */,
+				F89492452AC5700B00D93DFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F894924B2AC5700C00D93DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89492552AC5700C00D93DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F89492392AC5700900D93DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8685B1F2AC58D72000E7D50 /* ListSongs.swift in Sources */,
+				F8685B1B2AC57E6B000E7D50 /* LyricsView.swift in Sources */,
+				F8685B1D2AC58A58000E7D50 /* SingersView.swift in Sources */,
+				F89492432AC5700900D93DFC /* ContentView.swift in Sources */,
+				F89492412AC5700900D93DFC /* DuetLyricsApp.swift in Sources */,
+				F894926D2AC5703500D93DFC /* LyricsModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89492492AC5700C00D93DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89492522AC5700C00D93DFC /* DuetLyricsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89492532AC5700C00D93DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F894925E2AC5700C00D93DFC /* DuetLyricsUITestsLaunchTests.swift in Sources */,
+				F894925C2AC5700C00D93DFC /* DuetLyricsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F894924F2AC5700C00D93DFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F894923C2AC5700900D93DFC /* DuetLyrics */;
+			targetProxy = F894924E2AC5700C00D93DFC /* PBXContainerItemProxy */;
+		};
+		F89492592AC5700C00D93DFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F894923C2AC5700900D93DFC /* DuetLyrics */;
+			targetProxy = F89492582AC5700C00D93DFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F894925F2AC5700C00D93DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F89492602AC5700C00D93DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F89492622AC5700C00D93DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DuetLyrics/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = klau.studio.DuetLyrics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F89492632AC5700C00D93DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DuetLyrics/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = klau.studio.DuetLyrics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F89492652AC5700C00D93DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TDAR667HU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = klau.studio.DuetLyricsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuetLyrics.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DuetLyrics";
+			};
+			name = Debug;
+		};
+		F89492662AC5700C00D93DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TDAR667HU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = klau.studio.DuetLyricsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuetLyrics.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DuetLyrics";
+			};
+			name = Release;
+		};
+		F89492682AC5700C00D93DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TDAR667HU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = klau.studio.DuetLyricsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DuetLyrics;
+			};
+			name = Debug;
+		};
+		F89492692AC5700C00D93DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TDAR667HU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = klau.studio.DuetLyricsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DuetLyrics;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F89492382AC5700900D93DFC /* Build configuration list for PBXProject "DuetLyrics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F894925F2AC5700C00D93DFC /* Debug */,
+				F89492602AC5700C00D93DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F89492612AC5700C00D93DFC /* Build configuration list for PBXNativeTarget "DuetLyrics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F89492622AC5700C00D93DFC /* Debug */,
+				F89492632AC5700C00D93DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F89492642AC5700C00D93DFC /* Build configuration list for PBXNativeTarget "DuetLyricsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F89492652AC5700C00D93DFC /* Debug */,
+				F89492662AC5700C00D93DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F89492672AC5700C00D93DFC /* Build configuration list for PBXNativeTarget "DuetLyricsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F89492682AC5700C00D93DFC /* Debug */,
+				F89492692AC5700C00D93DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F89492352AC5700900D93DFC /* Project object */;
+}
