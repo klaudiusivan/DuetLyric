@@ -9,45 +9,45 @@ import SwiftUI
 
 struct LyricsView: View {
     let song: Song
+    @State var selection: UUID?
     
     var body: some View {
-        ScrollView {
-            VStack(content: {
-                SingersView(singers: song.singers)
-                
-                ForEach(song.lyrics, content: { lyrics in
-                    Section(content: {
-                        ForEach(lyrics.list) { lyric in
-                            VStack {
-                                HStack(alignment: .top) {
-                                    Text(lyric.singer)
-                                    Text("-")
-                                    HStack(alignment: .top, spacing: 0) {
-                                        if let firstLetter = lyric.text.first {
-                                            Text(String(firstLetter))
-                                                .fontWeight(.bold)
-                                        }
-                                        Text(lyric.text.dropFirst())
+        VStack {
+            SingersView(singers: song.singers)
+                .padding(.leading, 20)
+            List(song.lyrics, id: \.id, selection: $selection, rowContent: { lyrics in
+                Section(content: {
+                    ForEach(lyrics.list) { lyric in
+                        VStack {
+                            HStack(alignment: .top) {
+                                Text(lyric.singer)
+                                Text("-")
+                                HStack(alignment: .top, spacing: 0) {
+                                    if let firstLetter = lyric.text.first {
+                                        Text(String(firstLetter))
+                                            .fontWeight(.bold)
                                     }
-                                    Spacer()
+                                    Text(lyric.text.dropFirst())
                                 }
+                                Spacer()
                             }
-                            
                         }
-                    }, header: {
-                        HStack {
-                            Text(lyrics.part.description)
-                                .font(.headline)
-                            Spacer()
-                        }
-                        .padding(.init(top: 8, leading: 0, bottom: 4, trailing: 0))
-                    })
+                        
+                    }
+                }, header: {
+                    HStack {
+                        Text(lyrics.part.description)
+                            .font(.headline)
+                        Spacer()
+                    }
+                    .padding(.init(top: 8, leading: 0, bottom: 4, trailing: 0))
                 })
-                .navigationTitle(song.title)
+                
             })
-            .padding()
+            .navigationTitle(song.title)
+            .listItemTint(.accentColor)
+            .listStyle(PlainListStyle())
         }
-        
     }
 }
 
