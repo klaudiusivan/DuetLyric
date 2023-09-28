@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     let songs: [Song]
+    let router: AnyRouter<Route>
     
     var body: some View {
-        NavigationView(content: {
             List(songs, rowContent: { song in
                 NavigationLink {
-                    LyricsView(song: song)
+                    router.route(to: .lyricsView(song))
                 } label: {
                     VStack(spacing: 8) {
                         HStack {
@@ -28,8 +28,13 @@ struct ContentView: View {
                 }
             })
             .navigationTitle("Duet Lyrics")
-        })
         
+    }
+}
+
+extension ContentView {
+    enum Route {
+        case lyricsView(_ song: Song)
     }
 }
 
@@ -38,8 +43,9 @@ extension Collection {
     return Array(self.enumerated())
   }
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(songs: listSong)
+        ContentView(songs: listSong, router: ListSongRouter().eraseToAnyRouter())
     }
 }

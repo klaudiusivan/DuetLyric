@@ -18,6 +18,9 @@
 		F894925C2AC5700C00D93DFC /* DuetLyricsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F894925B2AC5700C00D93DFC /* DuetLyricsUITests.swift */; };
 		F894925E2AC5700C00D93DFC /* DuetLyricsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F894925D2AC5700C00D93DFC /* DuetLyricsUITestsLaunchTests.swift */; };
 		F894926D2AC5703500D93DFC /* LyricsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F894926C2AC5703500D93DFC /* LyricsModel.swift */; };
+		F8DB13C12AC5D11C0088DD38 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB13C02AC5D11C0088DD38 /* Router.swift */; };
+		F8DB13C32AC5D1350088DD38 /* ListSongRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB13C22AC5D1350088DD38 /* ListSongRouter.swift */; };
+		F8DB13C52AC5D1A20088DD38 /* DLNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB13C42AC5D1A20088DD38 /* DLNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		F894925B2AC5700C00D93DFC /* DuetLyricsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuetLyricsUITests.swift; sourceTree = "<group>"; };
 		F894925D2AC5700C00D93DFC /* DuetLyricsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuetLyricsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F894926C2AC5703500D93DFC /* LyricsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsModel.swift; sourceTree = "<group>"; };
+		F8DB13C02AC5D11C0088DD38 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F8DB13C22AC5D1350088DD38 /* ListSongRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSongRouter.swift; sourceTree = "<group>"; };
+		F8DB13C42AC5D1A20088DD38 /* DLNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLNavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				F89492402AC5700900D93DFC /* DuetLyricsApp.swift */,
-				F89492422AC5700900D93DFC /* ContentView.swift */,
-				F8685B1C2AC58A58000E7D50 /* SingersView.swift */,
-				F8685B1A2AC57E6B000E7D50 /* LyricsView.swift */,
-				F894926C2AC5703500D93DFC /* LyricsModel.swift */,
-				F8685B1E2AC58D72000E7D50 /* ListSongs.swift */,
+				F8DB13C62AC5D2AF0088DD38 /* Navigation */,
+				F8DB13C72AC5D2C90088DD38 /* Scenes */,
 				F89492442AC5700B00D93DFC /* Assets.xcassets */,
 				F89492462AC5700B00D93DFC /* Preview Content */,
 			);
@@ -137,6 +140,28 @@
 				F894925D2AC5700C00D93DFC /* DuetLyricsUITestsLaunchTests.swift */,
 			);
 			path = DuetLyricsUITests;
+			sourceTree = "<group>";
+		};
+		F8DB13C62AC5D2AF0088DD38 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB13C42AC5D1A20088DD38 /* DLNavigationView.swift */,
+				F8DB13C22AC5D1350088DD38 /* ListSongRouter.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F8DB13C72AC5D2C90088DD38 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F8DB13C02AC5D11C0088DD38 /* Router.swift */,
+				F89492422AC5700900D93DFC /* ContentView.swift */,
+				F8685B1C2AC58A58000E7D50 /* SingersView.swift */,
+				F8685B1A2AC57E6B000E7D50 /* LyricsView.swift */,
+				F894926C2AC5703500D93DFC /* LyricsModel.swift */,
+				F8685B1E2AC58D72000E7D50 /* ListSongs.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,9 +297,12 @@
 				F8685B1F2AC58D72000E7D50 /* ListSongs.swift in Sources */,
 				F8685B1B2AC57E6B000E7D50 /* LyricsView.swift in Sources */,
 				F8685B1D2AC58A58000E7D50 /* SingersView.swift in Sources */,
+				F8DB13C32AC5D1350088DD38 /* ListSongRouter.swift in Sources */,
+				F8DB13C12AC5D11C0088DD38 /* Router.swift in Sources */,
 				F89492432AC5700900D93DFC /* ContentView.swift in Sources */,
 				F89492412AC5700900D93DFC /* DuetLyricsApp.swift in Sources */,
 				F894926D2AC5703500D93DFC /* LyricsModel.swift in Sources */,
+				F8DB13C52AC5D1A20088DD38 /* DLNavigationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

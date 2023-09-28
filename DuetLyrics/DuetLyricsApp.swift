@@ -11,7 +11,10 @@ import SwiftUI
 struct DuetLyricsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(songs: listSong)
+            DLNavigation {
+                ContentView(songs: listSong, router: ListSongRouter().eraseToAnyRouter())
+            }
         }
     }
 }
+
