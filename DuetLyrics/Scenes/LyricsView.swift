@@ -9,13 +9,13 @@ import SwiftUI
 
 struct LyricsView: View {
     let song: Song
-    @State var selection: UUID?
+    @State var selection: Lyric?
     
     var body: some View {
         VStack {
             SingersView(singers: song.singers)
                 .padding(.leading, 20)
-            List(song.lyrics, id: \.id, selection: $selection, rowContent: { lyrics in
+            List(song.lyrics, rowContent: { lyrics in
                 Section(content: {
                     ForEach(lyrics.list) { lyric in
                         VStack {
@@ -32,6 +32,10 @@ struct LyricsView: View {
                                 Spacer()
                             }
                         }
+                        .onTapGesture {
+                            selection = lyric
+                        }
+                        .listRowBackground(lyric == selection ? Color.gray.opacity(0.3) : Color.white)
                         
                     }
                 }, header: {

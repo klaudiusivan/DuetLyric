@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Lyric: Identifiable {
+struct Lyric: Identifiable, Equatable {
     let id: UUID = .init()
     let text: String
     let singer: String
