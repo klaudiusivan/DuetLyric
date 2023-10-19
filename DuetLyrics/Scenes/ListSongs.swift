@@ -164,12 +164,12 @@ let percayalah: Song = .init(id: "percayalah-afgan-raisa",
                                     .init(text: "Aku yang tak akan melepaskan", singer: afgan.name),
                                     .init(text: "Kamu yang mengenggam hatiku", singer: afgan.name),
                                     .init(text: "Kita tak kan mungkin terpisahkan", singer: afgan.name),
-                                    .init(text: "Biarlah terjadi apapun yang terjadi", singer: afgan.name)
+                                    .init(text: "Biarlah terjadi apapun yang terjadi ... huuu", singer: afgan.name)
                                 ]),
                                 .init(part: .Bait(2), list: [
                                     .init(text: "Aku yang tak bisa melepaskan", singer: raisa.name),
-                                    .init(text: "Kamu yang miliki hatiku", singer: raisa.name),
-                                    .init(text: "Walau terlalu cepat", singer: afgan.name),
+                                    .init(text: "Kamu yang miliki hatiku, ohhh", singer: raisa.name),
+                                    .init(text: "Walau mungkin terlalu cepat", singer: afgan.name),
                                     .init(text: "Bagi kita berdua", singer: raisa.name),
                                     .init(text: "Untuk mengatakan", singer: raisa.name)
                                 ]),
